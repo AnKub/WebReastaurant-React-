@@ -1,0 +1,99 @@
+.info-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../../assets/tomatoinfo.png');
+  background-size: cover; /* Заполняет контейнер без искажений, чтобы полностью покрыть область */
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  background-attachment: fixed; /* Фон зафиксирован, не скроллится вместе со страницей */
+  background-position: center center;
+border-top: 0.5px solid #15282B;
+font-weight: 500;
+}
+
+.info-block {
+  width: 640px;
+  margin: 10px;
+  padding: 20px 20px;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  box-shadow: 0px 0px 10px 0px rgba(98, 244, 98, 0.5);
+  display: flex;
+ 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-block .reverse {
+  flex-direction: row-reverse;
+
+}
+
+.info-block p {
+  width: 300px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px; 
+  letter-spacing: 0.5px;
+  color:#f8f8f8;
+}
+
+.info-block img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Добавляем отступ сверху для кнопки */
+}
+.more-info-button {
+  background: linear-gradient(to bottom right, #15282B, #00BF63);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  /* margin-right: -50%; */
+}
+
+.more-info-button:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.more-info-button:not([disabled]):hover {
+  border-color: #4caf50;
+  box-shadow: rgba(90, 235, 70, 0.5) 0 2px 2px 5px;
+  transform: translateY(-2px);
+}
+
+.contact-details {
+  width: 400px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color:  #17334e;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  text-align:center;
+}
+.contact-details p{
+  color:#f69605;
+  font-size: 18px;
+  font-weight: 500;
+}

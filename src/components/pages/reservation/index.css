@@ -1,0 +1,83 @@
+/* Основные стили */
+.reservation-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  color: #ffffff;
+  background: #17334e;
+}
+
+.reservation-form h2 {
+  margin-bottom: 20px;
+}
+
+.reservation-form form div {
+  margin-bottom: 15px;
+}
+
+.reservation-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.reservation-form input {
+  width: calc(100% - 10px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reservation-form input:focus {
+  border-color: #4caf50;
+  box-shadow: rgba(1, 228, 122, 0.704) 0 2px 2px 4px;
+}
+
+.add-button {
+  background: linear-gradient(to bottom right, #15282B, #00BF63);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  margin-right: -50%;
+}
+
+.add-button:not([disabled]):focus {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5), -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5), 0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.add-button:not([disabled]):hover {
+  border-color: #4caf50;
+  box-shadow: rgba(249, 249, 249, 0.704) 0 2px 2px 5px;
+  transform: translateY(-2px);
+}
+
+
+@media screen and (max-width: 1084px) {
+  .reservation-form {
+    max-width: 80%; 
+    margin: 15px auto; 
+    border-radius: 15px;
+  }
+
+  .reservation-form input {
+    width: 100%; 
+  }
+}
